@@ -1,7 +1,3 @@
-<svelte:head>
-    <title>Zajn Jasnowidz</title>
-</svelte:head>
-
 <header>Zajn Jasnowidz</header>
 <div id="zod">
     <span id="tit">Wybierz swój znak zodiaku</span>

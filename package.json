@@ -19,5 +19,9 @@
 		"svelte-check": "^4.0.0",
 		"typescript": "^5.0.0",
 		"vite": "^6.0.0"
+	},
+	"dependencies": {
+		"@types/nodemailer": "^6.4.17",
+		"nodemailer": "^6.10.0"
 	}
 }
