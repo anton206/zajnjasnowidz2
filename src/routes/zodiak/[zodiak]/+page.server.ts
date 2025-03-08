@@ -28,10 +28,6 @@ const limiter = new RateLimiter({
 
 const zodiaki = ["baran", "byk", "bliznieta", "rak", "lew", "panna", "waga", "skorpion", "strzelec", "koziorozec", "wodnik", "ryby"];
 
-export const load: PageServerLoad = async (event) => {
-    await limiter.cookieLimiter?.preflight(event);
-};
-
 export const actions: Actions = {
     default: async (event) => {
         if (await limiter.isLimited(event)) throw error(429);
