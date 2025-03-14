@@ -8,4 +8,8 @@
     <title>Zajn Jasnowidz</title>
 </svelte:head>
 
-{@render children()}
+<main
+    class="w-screen h-screen bg-[url('/tlo-chris.jpg')] text-[gold] font-[Satisfy]"
+>
+    {@render children()}
+</main>

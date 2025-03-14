@@ -1,60 +1,94 @@
-<header>Zajn Jasnowidz</header>
-<div id="zod">
-    <span id="tit">Wybierz swój znak zodiaku</span>
-    <br />
-    <a class="zodiaki" style="margin-top:25px;" href="/zodiak/baran">
-        <img alt="" src="/tile001.png" /><br /><span class="tytzod">Baran</span
-        ><br />21Mar, - 20Kwiet.
-    </a>
-    <a class="zodiaki" style="margin-top:25px;" href="/zodiak/byk">
-        <img alt="" src="/tile010.png" /><br /><span class="tytzod">Byk</span
-        ><br />20Kwiet, - 20Maj
-    </a>
-    <a class="zodiaki" style="margin-top:25px;" href="/zodiak/bliznieta">
-        <img alt="" src="/tile005.png" /><br /><span class="tytzod"
-            >Bliźnięta</span
-        ><br />21Maj - 21Czer.
-    </a>
-    <a class="zodiaki" style="margin-top:25px;" href="/zodiak/rak">
-        <img alt="" src="/tile002.png" /><br /><span class="tytzod">Rak</span
-        ><br />21Czer. - 22Lip.
-    </a>
-    <a class="zodiaki" style="clear:both;" href="/zodiak/lew">
-        <img alt="" src="/tile006.png" /><br /><span class="tytzod">Lew</span
-        ><br />23Lip. - 23Sier.
-    </a>
-    <a class="zodiaki" href="/zodiak/panna">
-        <img alt="" src="/tile011.png" /><br /><span class="tytzod">Panna</span
-        ><br />23Sier. - 23Wrze.
-    </a>
-    <a class="zodiaki" href="/zodiak/waga">
-        <img alt="" src="/tile007.png" /><br /><span class="tytzod">Waga</span
-        ><br />23Wrze. - 23Paź.
-    </a>
-    <a class="zodiaki" href="/zodiak/skorpion">
-        <img alt="" src="/tile004.png" /><br /><span class="tytzod"
-            >Skorpion</span
-        ><br />23Paź. - 22List.
-    </a>
-    <a class="zodiaki" style="clear:both;" href="/zodiak/strzelec">
-        <img alt="" src="/tile009.png" /><br /><span class="tytzod"
-            >Strzelec</span
-        ><br />22List. - 21Gru.
-    </a>
-    <a class="zodiaki" href="/zodiak/koziorozec">
-        <img alt="" src="/tile003.png" /><br /><span class="tytzod"
-            >Koziorożec</span
-        ><br />21Gru. - 20Sty.
-    </a>
-    <a class="zodiaki" href="/zodiak/wodnik">
-        <img alt="" src="/tile000.png" /><br /><span class="tytzod">Wodnik</span
-        ><br />20Sty. - 19Lut.
-    </a>
-    <a class="zodiaki" href="/zodiak/ryby">
-        <img alt="" src="/tile008.png" /><br /><span class="tytzod">Ryby</span
-        ><br />19Lut. - 20Mar.
-    </a>
+<script>
+    import Zodiak from "./Zodiak.svelte";
+</script>
+
+<header class="w-full text-center text-[100px]">Zajn Jasnowidz</header>
+
+<div
+    class="h-[700px] text-center p-5 text-2xl font-bold mx-[150px] mt-12"
+    style="box-shadow: 12px 12px 26px 2px cyan"
+>
+    <div class="text-4xl font-bold font-mono text-center">
+        Wybierz swój znak zodiaku
+    </div>
+
+    <div class="flex flex-wrap">
+        <Zodiak
+            nazwa="Baran"
+            url="baran"
+            img="/tile001.png"
+            data="21Mar, - 20Kwiet."
+        />
+        <Zodiak
+            nazwa="Byk"
+            url="byk"
+            img="/tile010.png"
+            data="20Kwiet, - 20Maj"
+        />
+        <Zodiak
+            nazwa="Bliźnięta"
+            url="bliznieta"
+            img="/tile005.png"
+            data="21Maj - 21Czer."
+        />
+        <Zodiak
+            nazwa="Rak"
+            url="rak"
+            img="/tile002.png"
+            data="21Czer. - 22Lip."
+        />
+        <Zodiak
+            nazwa="Lew"
+            url="lew"
+            img="/tile006.png"
+            data="23Lip. - 23Sier."
+        />
+        <Zodiak
+            nazwa="Panna"
+            url="panna"
+            img="/tile011.png"
+            data="23Sier. - 23Wrze."
+        />
+        <Zodiak
+            nazwa="Waga"
+            url="waga"
+            img="/tile007.png"
+            data="23Wrze. - 23Paź."
+        />
+        <Zodiak
+            nazwa="Skorpion"
+            url="skorpion"
+            img="/tile004.png"
+            data="23Paź. - 22List."
+        />
+        <Zodiak
+            nazwa="Strzelec"
+            url="strzelec"
+            img="/tile009.png"
+            data="22List. - 21Gru."
+        />
+        <Zodiak
+            nazwa="Koziorożec"
+            url="koziorozec"
+            img="/tile003.png"
+            data="21Gru. - 20Sty."
+        />
+        <Zodiak
+            nazwa="Wodnik"
+            url="wodnik"
+            img="/tile000.png"
+            data="20Sty. - 19Lut."
+        />
+        <Zodiak
+            nazwa="Ryby"
+            url="ryby"
+            img="/tile008.png"
+            data="19Lut. - 20Mar."
+        />
+    </div>
 </div>
-<footer style="clear:both;">
-    <br /><br />&copy; Copyright
+<footer
+    class="mt-40 bg-black w-full h-[100px] text-neutral-400 text-center text-2xl"
+>
+    &copy; Copyright
 </footer>
